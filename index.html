@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="NovaCore - Professional business solutions for modern companies">
+    <title>NovaCore - Business Solutions</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Loading Animation -->
+    <div class="loader" id="loader">
+        <div class="loader-spinner"></div>
+    </div>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <i class="fas fa-cube"></i>
+                <span>NovaCore</span>
+            </a>
+            
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active" data-nav="home">Home</a></li>
+                <li><a href="#services" class="nav-link" data-nav="services">Services</a></li>
+                <li><a href="#about" class="nav-link" data-nav="about">About</a></li>
+                <li><a href="#testimonials" class="nav-link" data-nav="testimonials">Testimonials</a></li>
+                <li><a href="#faq" class="nav-link" data-nav="faq">FAQ</a></li>
+                <li><a href="#contact" class="nav-link" data-nav="contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section (Home) -->
+    <section id="home" class="hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <span class="hero-badge">Welcome to NovaCore</span>
+                <h1 class="hero-title">Innovative Solutions for <span class="highlight">Modern Business</span></h1>
+                <p class="hero-description">
+                    We help businesses grow with cutting-edge technology, strategic consulting, 
+                    and innovative solutions tailored to your unique needs.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">
+                        <i class="fas fa-rocket"></i> Get Started
+                    </a>
+                    <a href="#services" class="btn btn-secondary">
+                        <i class="fas fa-briefcase"></i> Our Services
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="hero-stat">
+                        <span class="stat-number" data-target="500">0</span>+
+                        <span class="stat-label">Clients</span>
+                    </div>
+                    <div class="hero-stat">
+                        <span class="stat-number" data-target="15">0</span>+
+                        <span class="stat-label">Years</span>
+                    </div>
+                    <div class="hero-stat">
+                        <span class="stat-number" data-target="1200">0</span>+
+                        <span class="stat-label">Projects</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-image-placeholder">
+                    <i class="fas fa-chart-line"></i>
+                    <div class="floating-card floating-card-1">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Success</span>
+                    </div>
+                    <div class="floating-card floating-card-2">
+                        <i class="fas fa-trophy"></i>
+                        <span>Award Winning</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Our Services</span>
+                <h2 class="section-title">What We Offer</h2>
+                <p class="section-description">Comprehensive business solutions designed to help you succeed</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Web Development</h3>
+                    <p>Custom websites and web applications built with modern technologies for optimal performance.</p>
+                    <a href="#" class="btn-learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mobile Apps</h3>
+                    <p>Native and cross-platform mobile applications for iOS and Android devices.</p>
+                    <a href="#" class="btn-learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>Cloud Solutions</h3>
+                    <p>Scalable cloud infrastructure and migration services for seamless business operations.</p>
+                    <a href="#" class="btn-learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Cybersecurity</h3>
+                    <p>Comprehensive security audits and protection for your digital assets and data.</p>
+                    <a href="#" class="btn-learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3>Data Analytics</h3>
+                    <p>Advanced analytics and business intelligence solutions to drive informed decisions.</p>
+                    <a href="#" class="btn-learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>24/7 Support</h3>
+                    <p>Round-the-clock technical support and maintenance for your business systems.</p>
+                    <a href="#" class="btn-learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">About Us</span>
+                <h2 class="section-title">Who We Are</h2>
+                <p class="section-description">A team of passionate professionals dedicated to your success</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Your Trusted Technology Partner</h3>
+                    <p>
+                        NovaCore is a leading business solutions provider with over 15 years of experience 
+                        in helping companies transform their operations and achieve remarkable growth. 
+                        We combine innovation, expertise, and dedication to deliver exceptional results.
+                    </p>
+                    
+                    <div class="mission-vision">
+                        <div class="mission">
+                            <h4><i class="fas fa-bullseye"></i> Our Mission</h4>
+                            <p>To empower businesses with innovative technology solutions that drive growth and success.</p>
+                        </div>
+                        <div class="vision">
+                            <h4><i class="fas fa-eye"></i> Our Vision</h4>
+                            <p>To be the global leader in business transformation and digital innovation.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span class="counter" data-target="15">0</span>+
+                        <h4>Years Experience</h4>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-project-diagram"></i>
+                        <span class="counter" data-target="1200">0</span>+
+                        <h4>Projects Completed</h4>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-smile"></i>
+                        <span class="counter" data-target="500">0</span>+
+                        <h4>Happy Clients</h4>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-users"></i>
+                        <span class="counter" data-target="50">0</span>+
+                        <h4>Team Members</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Testimonials</span>
+                <h2 class="section-title">What Our Clients Say</h2>
+                <p class="section-description">Hear from businesses we've helped succeed</p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-avatar">
+                        <img src="img1.jpg" alt="John Doe" loading="lazy">
+                    </div>
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-review">
+                        "NovaCore transformed our business with their innovative solutions. 
+                        Their team is professional, responsive, and truly cares about their clients' success."
+                    </p>
+                    <h4>John Doe</h4>
+                    <span class="testimonial-position">CEO, TechStart Inc.</span>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-avatar">
+                        <img src="img2.jpg" alt="Jane Smith" loading="lazy">
+                    </div>
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-review">
+                        "Working with NovaCore has been a game-changer for our company. 
+                        Their expertise in web development and data analytics helped us increase revenue by 200%."
+                    </p>
+                    <h4>Jane Smith</h4>
+                    <span class="testimonial-position">Marketing Director, GrowthCo</span>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-avatar">
+                        <img src="img3.jpg" alt="Saleena Johnson" loading="lazy">
+                    </div>
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="testimonial-review">
+                        "The team at NovaCore exceeded our expectations in every way. 
+                        Their cloud solutions and cybersecurity services gave us peace of mind and improved our efficiency."
+                    </p>
+                    <h4>Saleena Johnson</h4>
+                    <span class="testimonial-position">CEO, TechStart Inc.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- 
+   FAQ Section-->
+   
+<section id="faq" class="faq-section">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-badge">FAQ</span>
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <p class="section-description">Find answers to common questions about our services.</p>
+        </div>
+        <div class="faq-container">
+            <!-- FAQ Item 1 -->
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>How long does a typical project take?</span>
+                    <i class="fas fa-plus"></i>
+                </button>
+                <div class="faq-answer">
+                    <div class="faq-answer-inner">
+                        <p>Project timelines vary based on complexity and scope. Simple websites typically take 2-4 weeks, while complex applications may take 2-3 months. We provide detailed timelines during our initial consultation.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- FAQ Item 2 -->
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>What is your pricing model?</span>
+                    <i class="fas fa-plus"></i>
+                </button>
+                <div class="faq-answer">
+                    <div class="faq-answer-inner">
+                        <p>We offer flexible pricing models including fixed-price projects, hourly rates, and retainer agreements. Each project is quoted individually based on your specific requirements and goals.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- FAQ Item 3 -->
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>Do you offer ongoing support?</span>
+                    <i class="fas fa-plus"></i>
+                </button>
+                <div class="faq-answer">
+                    <div class="faq-answer-inner">
+                        <p>Yes! We provide ongoing maintenance and support plans to keep your website secure, updated, and performing optimally. Support packages can be customized to fit your needs.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- FAQ Item 4 -->
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>Can you redesign my existing website?</span>
+                    <i class="fas fa-plus"></i>
+                </button>
+                <div class="faq-answer">
+                    <div class="faq-answer-inner">
+                        <p>Absolutely! We specialize in website redesigns. We'll analyze your current site, identify improvement areas, and create a modern, user-friendly design that better serves your audience.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- FAQ Item 5 -->
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>What technologies do you use?</span>
+                    <i class="fas fa-plus"></i>
+                </button>
+                <div class="faq-answer">
+                    <div class="faq-answer-inner">
+                        <p>We work with modern technologies including HTML5, CSS3, JavaScript, React, Node.js, Python, and various CMS platforms like WordPress. We choose the best tools for each project's needs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Contact Us</span>
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-description">We'd love to hear from you. Reach out for a free consultation.</p>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>info@novacore.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+92 (345) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Address</h4>
+                            <p>123 Business Ave, Suite 100<br>Lahore, Pakistan 54000</p>
+                        </div>
+                    </div>
+                    <div class="social-media">
+                        <a href="#" aria-label="Facebook" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Instagram" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="fullName">Full Name</label>
+                        <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+                        <span class="error-message" id="nameError"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                        <span class="error-message" id="emailError"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+                        <span class="error-message" id="phoneError"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Enter your message" required></textarea>
+                        <span class="error-message" id="messageError"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message <i class="fas fa-paper-plane"></i></button>
+                    <div class="success-message" id="successMessage">
+                        <i class="fas fa-check-circle"></i> Your message has been sent successfully!
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Transform Your Business?</h2>
+            <p>Get started today and discover how NovaCore can help you achieve your goals</p>
+            <a href="#contact" class="btn btn-primary">Get Started Now</a>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3><i class="fas fa-cube"></i> NovaCore</h3>
+                    <p>Innovative business solutions for modern companies. We help businesses grow and succeed.</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Web Development</a></li>
+                        <li><a href="#services">Mobile Apps</a></li>
+                        <li><a href="#services">Cloud Solutions</a></li>
+                        <li><a href="#services">Cybersecurity</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Contact Info</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-envelope"></i> info@novacore.com</li>
+                        <li><i class="fas fa-phone"></i> +92 (345) 123-4567</li>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Business Ave, Lahore, Pakistan</li>
+                    </ul>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 NovaCore. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    <script src="script.js"></script>
+</body>
+</html>
